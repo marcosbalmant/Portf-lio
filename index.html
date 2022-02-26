@@ -17,10 +17,39 @@
     max-width: 100%;
     border-radius: 50%;
 }
+.corPrimaria {
+    background-color:rgba(5, 145, 138, 0.342);
+}
+.corSecundaria {
+    background-color: rgba(199, 230, 215, 0.973);
+}
+p {
+    font-family:Lato, 'Helvetica Neue',Helvetica, Arial,  sans-serif;
+    color:black !important;
+}
+.icones {
+    padding-left: 5px;
+}
+.titulosBrancos {
+    text-decoration: underline;
+    text-underline-position: below;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+.titulosVerdes {
+    text-decoration: underline;
+    text-underline-position: below;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
 </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="corSecundaria navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#">Marcos Leopoldo C. Balmant</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,7 +59,7 @@
           <ul class="navbar-nav mr-auto">
 
           </ul>
-          <ul>
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre Mim</a>
             </li>
@@ -46,11 +75,10 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Objetivos</a>
             </li>
-
           </ul>
         </div>
       </nav>
-      <section class="jumbotron text-center">
+      <section class="jumbotron text-center corPrimaria">
         <div class="container">
             <img class="foto-perfil" src="img/eu.jpg" alt="">
           <h1 class="jumbotron-heading">Marcos Leopoldo C. Balmant</h1>
@@ -65,9 +93,9 @@
       </section>
 
     <!-- Sobre Mim -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center corPrimaria">
       <div class="container">
-        <h2 class="jumbotron heading">Sobre Mim</h2>
+        <h2 class="jumbotron-heading">Sobre Mim</h2>
         <p class="lead"></p>
         <blockquote class="blockquote text-center">
           <p class="mb-0">Sou uma pessoa que busco ser melhor 1% a cada dia, buscado novos conhecimentos que agregam tanto na minha vida pessoal quanto na profissional, sou bem comunicativo, gosto de conhecer novas pessoas, novos ambiente sociais. Sou um cara que prezo a família, amizade, lealdade, acredito na filosofia de que “Revolucionário é todo aquele que quer mudar o mundo e tem a coragem de começar por si mesmo. - Sergio Vaz.”</p>
@@ -76,9 +104,9 @@
     </section>
 
     <!-- Escolaridade -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center corPrimaria">
       <div class="container">
-        <h2 class="jumbotron heading">Escolaridade</h2>
+        <h2 class="jumbotron-heading">Escolaridade</h2>
         <p class="lead"></p>
         <blockquote class="blockquote text-center">
           <p class="mb-0">Ensino Médio Completo</p>
@@ -88,9 +116,9 @@
     </section>
 
     <!-- Exp Profissional -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center corPrimaria">
       <div class="container">
-        <h2 class="jumbotron heading">Experiência Profissional</h2>
+        <h2 class="jumbotron-heading">Experiência Profissional</h2>
         <p class="lead"></p>
         <blockquote class="blockquote">
           <ul class="list-unstyled">
@@ -104,9 +132,9 @@
     </section> 
 
     <!-- Conhecimentos Gerais -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center corPrimaria">
       <div class="container">
-        <h2 class="jumbotron heading">Conhecimentos Extras</h2>
+        <h2 class="jumbotron-heading">Conhecimentos Extras</h2>
         <p class="lead"></p>
         <blockquote class="blockquote">
           <ul class="list-unstyled">
@@ -127,7 +155,7 @@
     <!-- Objetivos -->
     <section class="jumbotron text-center">
       <div class="container">
-        <h2 class="jumbotron heading">Objetivos</h2>
+        <h2 class="jumbotron-heading">Objetivos</h2>
         <p class="lead"></p>
         <blockquote class="blockquote text-center">
           <p class="mb-0">Os objetivos que eu busco em minha vida é a Liberdade Financeira, prezo também como objetivo sempre melhorar o meu Conhecimento, quando estou dentro de alguma organização, crio o meu objetivo profissional e dedico minha sabedoria e meu tempo para conquistá-lo. Busco empresas que iram agregar em minha Carreira Profissional com Experiência e Conhecimento. "As vezes nem sempre o dinheiro prevalece!" </p>
@@ -136,7 +164,7 @@
     </section>
 
     <!--Contato-->
-    <section>
+    <section class="corPrimaria">
       <div>
         <div class="container-fluid">
           <h3 class="text-center">Disponível para Oportunidades.</h3>
@@ -147,7 +175,7 @@
 
 
     <!-- Footer -->
-    <footer class="text-center">
+    <footer class="text-center corSecundaria ">
       <p>Aguardo o seu contato e Desde já, agradeço!</p>
     </footer>
 </body>
