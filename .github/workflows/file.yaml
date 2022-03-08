@@ -1,0 +1,23 @@
+name: Teste Container Action
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Buildando a imagem
+      run: docker build -f Dockerfile -t curriculo:v1 .
+
+    - name: Criando container com a Build
+      run: docker run --name curriculo_cota -d -p 8080:80 curriculo:v1
+
+
