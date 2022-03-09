@@ -42,4 +42,5 @@ jobs:
           port: 22
           script: |
             docker container rm -f curriculo
+            docker image rm -f marcosbalmant/curriculo_cota:develop
             docker run --name curriculo -d -p 80:80 marcosbalmant/curriculo_cota:develop
