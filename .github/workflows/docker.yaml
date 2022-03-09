@@ -40,6 +40,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: 22
-          script: │
-            docker container rm curriculo -f
+          script: |
+            docker container rm -f curriculo
             docker run --name curriculo -d -p 80:80 marcosbalmant/curriculo_cota:develop
